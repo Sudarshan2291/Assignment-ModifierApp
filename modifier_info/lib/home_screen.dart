@@ -58,7 +58,6 @@ class _CreateModifierGroupScreenState extends State<CreateModifierGroupScreen> {
   final TextEditingController _descriptionController = TextEditingController();
   final TextEditingController _minQuantityController = TextEditingController();
   final TextEditingController _maxQuantityController = TextEditingController();
-
   bool _isActive = true;
 
   Future<void> createModifierGroup() async {
@@ -71,7 +70,7 @@ class _CreateModifierGroupScreenState extends State<CreateModifierGroupScreen> {
       "modifier_group_description": _descriptionController.text.trim(),
       "min": int.tryParse(_minQuantityController.text.trim()) ?? 0,
       "max": int.tryParse(_maxQuantityController.text.trim()) ?? 0,
-      "active": _isActive, // Use the _isActive variable
+      "active": _isActive,
       "vendorId": 1,
     };
 
@@ -188,7 +187,7 @@ class _ViewModifierGroupsScreenState extends State<ViewModifierGroupsScreen> {
     const String apiUrl =
         "https://megameal.twilightparadox.com/pos/setting/modifier_group/?vendorId=1&page=1&page_size=10";
 
-    try {
+    try { 
       final response = await http.get(Uri.parse(apiUrl));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
@@ -242,7 +241,7 @@ class _ViewModifierGroupsScreenState extends State<ViewModifierGroupsScreen> {
         builder: (context) => EditModifierScreen(modifierData: group),
       ),
     );
-    fetchModifierGroups(); // Refresh the list after editing
+    fetchModifierGroups(); 
   }
 
   @override
