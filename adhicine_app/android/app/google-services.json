@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491485491795",
+    "project_id": "adicine-app",
+    "storage_bucket": "adicine-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491485491795:android:d3ff70f992b62b94a28ca6",
+        "android_client_info": {
+          "package_name": "com.example.adhicine_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491485491795-js4gtjrlsg58i004bgetvuiqlqjhikfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adhicine_app",
+            "certificate_hash": "289f909463a56f478f42f1f11f41db503efafe96"
+          }
+        },
+        {
+          "client_id": "491485491795-7srs8t0lua51658mf6ei40kiq7vm3o8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpYFZ8Ebw30SskO69nArd9rEeFqCxfMJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491485491795-7srs8t0lua51658mf6ei40kiq7vm3o8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
